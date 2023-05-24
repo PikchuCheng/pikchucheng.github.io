@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair:ital,wght@1,300&display=swap');
+
+        body{
+            font-family: 'Lato', sans-serif;
+            background-color: rgb(112, 111, 111);
+            width: 90vw;
+        }
+
+.container{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    color:rgb(112, 111, 111);
+    font-size: 2rem;
+
+   
+}
+
+h1{
+    font-size: 10rem;
+    letter-spacing: 2rem;
+    position: absolute;
+    top:300px
+    
+}
+
+h2{
+
+    position: absolute;
+    top:300px
+
+}
+
+
+.ball1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(232, 240, 159);
+    z-index: -1;
+    animation-name: moving1;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    position: absolute;
+    animation-direction: alternate;
+    top: 100px;
+    left: 100;
+    opacity: 0.7;
+    
+}
+
+
+
+.ball2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(217, 233, 70);
+    z-index: -1;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    position: absolute;
+    animation-direction: alternate;
+    top: 0px;
+    left: 0;
+    opacity: 0.8;
+
+}
+
+
+@keyframes moving{
+
+    0%{
+        background-color: rgb(240, 210, 41);
+        width: 200px;
+        height: 200px;
+        left:0px; top:100px;
+    }
+    50%{
+        left:400px; top:400px;
+    }
+
+    100%{
+
+        background-color: rgb(217, 255, 0);
+        width: 600px;
+        height: 600px;
+        right:0px; bottom:100px;
+    }
+       
+    }
+
+    @keyframes moving1{
+
+        0%{
+
+background-color: rgb(216, 196, 15);
+width: 400px;
+height: 400px;
+right:0px; bottom:0px;
+}
+
+50%{
+    right:800px; top:400px;
+}
+
+100%{
+    background-color: rgb(205, 236, 164);
+    width: 200px;
+    height: 200px;
+    right:0px; top:0px;
+}
+
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="ball1"></div>
+    <h1>404</h1>
+    <h2>PAGE NOT FOUND</h2>
+    <div class="ball2"></div>
+   
+
+</div>
+    
+</body>
+</html>
